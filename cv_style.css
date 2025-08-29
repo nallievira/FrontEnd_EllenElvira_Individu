@@ -1,0 +1,41 @@
+body {
+    background-size: 50%;
+    background-image: url(ellenbg.png);
+    animation: wave 15s ease infinite;
+    margin: 0;
+}
+
+@keyframes wave {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.konten-utama {
+    display: flex;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    color: beige;
+    text-align: center;
+    text-shadow: 0 0 5px #151d7d;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.konten-utama h1{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+.konten-utama h2{
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: 400;
+}
