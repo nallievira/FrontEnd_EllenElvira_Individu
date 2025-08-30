@@ -1,4 +1,5 @@
 body {
+    scroll-behavior: smooth;
     background-size: 50%;
     background-image: url(ellenbg.png);
     animation: wave 15s ease infinite;
@@ -18,6 +19,7 @@ body {
 }
 
 .konten-utama {
+    scroll-behavior: smooth;
     display: flex;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
@@ -40,11 +42,16 @@ body {
     font-weight: 400;
 }
 
-.deskripsi{
+.deskripsi-singkat{
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: 50px;
     color: rgb(250, 254, 149);
     text-shadow: 0 0 10px #151d7d;
+    margin-left: 25px;
+    margin-bottom: 0;
+}
+
+.deskripsi{
     justify-content: left;
     margin-left: 25px;
     margin-bottom: 0;
@@ -59,4 +66,70 @@ body {
 .highlight{
     color: white;
     font-weight: 700;
+}
+#cc_img {
+    scroll-behavior: smooth;
+    margin-top: 20px;
+    padding:5px;
+    width: 25em;
+    border-radius: 100px 10px 100px;
+    box-shadow: 3px 5px 25px #a5abf1;
+    animation: shong 1s ease-in ;
+}
+
+@keyframes shong {
+    0% {
+        opacity: 0%;
+    }
+    50% {
+        opacity: 50%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+
+.highlight2 {
+    color: rgb(237, 137, 137);
+    font-weight: 700;
+    text-shadow: #000000 0 0 10px;
+    font-style: italic;
+}
+
+.videoeln {
+    scroll-behavior: smooth;
+    justify-content: right;
+    width: 1000px;
+    height: 600px;
+    margin-top: 10px;
+    border-radius: 100px 20px 100px;
+    box-shadow: 0 0 100px #5c67db, 0 0 20px #5c67db;
+    animation-name: into;
+    animation-duration: 2.5s, 5s;
+}
+
+.video{
+    scroll-behavior: smooth;
+    justify-content: right;
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+
+@keyframes into{
+    from{
+        translate: 150vw 0 ;
+        scale: 200% 1;
+    }
+    to{
+        translate: 0 0;
+        scale: 1;
+    }
+}
+
+.video p{
+    margin-top: -40px;
+    font-size: 35px;
+    font-weight: 300;
 }
